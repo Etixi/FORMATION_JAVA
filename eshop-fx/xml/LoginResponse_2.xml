@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LoginResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			   xsi:schemaLocation="http://www.infotel.com/eshop eshop.xsd"
+			   xmlns="http://www.infotel.com/eshop" 
+			   username="francois@yahoo.fr">
+	<FirstName>François</FirstName>
+	<LastName>Pignon</LastName>
+</LoginResponse>

@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.108.0">
+    <title>Sticky Footer Navbar Template · Bootstrap v5.3</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/sticky-footer-navbar/">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Custom styles for this template -->
+    <link href="css/app.css" rel="stylesheet">
+</head>
+
+<body class="d-flex flex-column h-100">
+        <header>
+            <!-- Fixed navbar -->
+            <nav class="navbar navbar-expand-md fixed-top navbar-light" style="background-color: #029EED;">
+                <div class="container-fluid">
+                    <div>
+                        <img class="logo" src="images/logo.png" alt="logo">
+                        <a class="navbar-brand" href="#">Boutique eshop</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+                            aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </div>
+                    <!--Dropdown, search et bouton de nav-->
+                    <div>
+                        <div class="collapse navbar-collapse" id="navbarCollapse">
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle" style="background-color:#FFFFFF ;" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Catégorie
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><button class="dropdown-item" type="button">Aventure</button></li>
+                                    <li><button class="dropdown-item" type="button">BD</button></li>
+                                    <li><button class="dropdown-item" type="button">Fiction</button></li>
+                                </ul>
+                            </div>
+                            <form class="d-flex" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-primary" type="submit">Search</button>
+                            </form>
+                        </div>
+                        <div class="collapse navbar-collapse" id="navbarCollapse">
+                            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Profil</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Panier</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Se connecter</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- BD du moment -->
+        <hr>
+        <main class="flex-shrink-0">
+            <div class="container">
+                <h2 class="display-2">Notre sélection BD du mois</h2>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="card" style="width: 22rem;">
+                            <img class="card-img-top" src="images/BD.png" alt="Thor Renaissance">
+                            <div class="card-body">
+                                <h5 class="card-title">Thor Renaissance</h5>
+                                <p class="lead"><small>BD de Joe Michaël Straczynski et Olivier Coipel chez Panini
+                                        Comics
+                                        (Marvel Deluxe).</small></p>
+                                <p class="text-right">10, 50 €</p>
+                                <button type="button" class="btn btn-outline-info">Voir plus</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 22rem;">
+                            <img class="card-img-center" src="images/BD2.png" alt="X-Men L'intégrale">
+                            <div class="card-body">
+                                <h5 class="card-title">X-Men l'Intégrale</h5>
+                                <p class="lead"><small>Nouvelle intégrale consacrée aux premiers X-Men de Charles
+                                        Xavier.
+                                    </small></p>
+                                <p class="text-right">10 €</p>
+                                <button type="button" class="btn btn-outline-info">Voir plus</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card" style="width: 22rem;">
+                            <img class="card-img-top" src="images/BD4.jpg" alt="Forgotten Blade">
+                            <div class="card-body">
+                                <h5 class="card-title">Forgotten Blade</h5>
+                                <p class="lead"><small>Un récit d'aventure captivante aux croisées de la fantasy et de
+                                        la science-fiction.</small></p>
+                                <p class="text-right">20, 90 €</p>
+                                <button type="button" class="btn btn-outline-info">Voir plus</button>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+                <!-- Coups de coeur -->
+                <div class="container">
+                    <h2 class="display-2"></h2>
+                </div>
+                <div class="container">
+                    <h2 class="display-2">Nos coups de cœur</h2>
+                </div>
+                <div class="container">
+                    <h2 class="display-2"></h2>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col">
+
+                            <!-- BD 1 -->
+                            <div class="card" style="width: 22rem;">
+                                <img class="card-img-top" src="images/BD3.jpg" alt="Fins de siècle">
+                                <div class="card-body">
+                                    <h5 class="card-title">Fins de siècle</h5>
+                                    <p class="lead"><small>BD de Pierre Christin et Bilal, Enki chez Casterman.</small>
+                                    </p>
+                                    <p class="text-right">15 €</p>
+                                    <button type="button" class="btn btn-outline-info">Voir plus</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card" style="width: 22rem;">
+                                <img class="card-img-top" src="images/BD5.jpg" alt="Donjon Potron Minet">
+                                <div class="card-body">
+                                    <h5 class="card-title">Poltron Minet</h5>
+                                    <p class="lead"><small>Cédric Mayen et Madd nous proposent un récit animalier assez
+                                            dur, où les animaux n'ont rien à envier aux humains.</small></p>
+                                    <p class="align-items-right">20 €</p>
+                                    <button type="button" class="btn btn-outline-info">Voir plus</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="card" style="width: 22rem;">
+                                <img class="card-img-top" src="images/BD6.jpg" alt="Superman">
+                                <div class="card-body">
+                                    <h5 class="card-title">Superman for all Seasons</h5>
+                                    <p class="lead"><small>Smallville, Kansas. Le jeune Clark, élevé par Jonathan et
+                                            Martha Kent, ses parents adoptifs, découvre en grandissant qu'il possède des
+                                            capacités hors du commun.</small></p>
+                                    <p class="align-items-right">19 €</p>
+                                    <button type="button" class="btn btn-outline-info">Voir plus</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </main>
+
+
+        <footer>
+            <p class = "special"><strong>&copy Infotel</p>
+          <ul class="navigation">
+            <li><a href="#">Plan du site </a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">A Propos</a></li>
+          </ul>
+          <!--
+            <nav class="menu">
+                <ul>
+                  <a href="plansite.html">Plan du site</a><br/>
+                  <a href="contact.html">Contact</a><br/>
+                  <a href="about.html">A propos</a>
+                </ul>
+              </nav>
+          -->
+        </footer>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+            crossorigin="anonymous"></script>
+
+    </body>
+
+</html>

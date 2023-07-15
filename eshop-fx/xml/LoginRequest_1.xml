@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE LoginRequest SYSTEM "eshop.dtd">
+
+<LoginRequest xmlns="http://www.infotel.com/eshop">
+	<Username>francois@yahoo.fr</Username>
+	<Password>secret</Password>
+</LoginRequest>

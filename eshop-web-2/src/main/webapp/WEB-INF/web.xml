@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  
+  <welcome-file-list>
+  <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+  
+ <context-param>
+  <param-name>appName</param-name>
+  <param-value>Ma boutique</param-value>
+ </context-param>
+
+<context-param>
+<param-name>javax.servlet.jsp.jstl.fmt.localizationContext</param-name>
+<param-value>com.infotel.eshop.web.i18n.Labels</param-value>
+</context-param>
+
+<context-param>
+	<param-name>contextConfigLocation</param-name>
+	<param-value>com.infotel.eshop.web.WebConfig</param-value>
+	<!--      <param-value>/WEB-INF/app-context-web.xml</param-value> -->
+</context-param>
+
+<context-param>
+	<param-name>contextClass</param-name>
+	<param-value>org.springframework.web.context.support.AnnotationConfigWebApplicationContext</param-value>
+</context-param>
+
+<listener>
+	<listener-class>com.infotel.eshop.web.MyListener</listener-class>
+</listener>
+
+<listener>
+	<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+</listener>
+ 
+   
+  
+<!--    <servlet>
+  		<servlet-name>Hello</servlet-name>
+  		<servlet-class>com.infotel.eshop.web.HelloServlet</servlet-class>
+  		<init-param>
+  			<param-name>greet</param-name>
+  			<param-value>Holà</param-value>
+  		</init-param>
+  </servlet>
+ 
+  <servlet-mapping>
+  <servlet-name>Hello</servlet-name>
+  <url-pattern>/hello</url-pattern>
+  </servlet-mapping> -->
+  
+ <!--  <servlet>
+  	<servlet-name>Search</servlet-name>
+  	<servlet-class>com.infotel.eshop.web.SearchServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Search</servlet-name>
+  <url-pattern>/search</url-pattern>
+  </servlet-mapping> -->
+  
+  <!-- <servlet>
+  	<servlet-name>Detail</servlet-name>
+  	<servlet-class>com.infotel.eshop.web.DetailServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Detail</servlet-name>
+  <url-pattern>/detail</url-pattern>
+  </servlet-mapping> -->
+  
+  
+</web-app>

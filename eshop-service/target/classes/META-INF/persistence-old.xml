@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+        version="2.0">
+        
+        <persistence-unit name="eshop">
+        <class>com.infotel.eshop.model.Category</class>  
+        <class>com.infotel.eshop.model.Book</class>  
+        <class>com.infotel.eshop.model.BookPrice</class>  
+        <class>com.infotel.eshop.model.BookDetails</class>  
+        <class>com.infotel.eshop.model.Author</class>  
+        <class>com.infotel.eshop.model.ImageData</class>  
+        <class>com.infotel.eshop.model.User</class>  
+        <class>com.infotel.eshop.model.Person</class>  
+        <class>com.infotel.eshop.model.Customer</class>  
+        <class>com.infotel.eshop.model.Merchant</class>  
+        <class>com.infotel.eshop.model.Address</class>  
+        <class>com.infotel.eshop.model.Order</class>  
+        <class>com.infotel.eshop.model.OrderItem</class>  
+        <class>com.infotel.eshop.model.ItemCounter</class>  
+
+        <properties>
+        <property name="javax.persistence.jdbc.driver" value="org.h2.Driver"/>
+        <property name="javax.persistence.jdbc.url" value="jdbc:h2:tcp://localhost:9092/eshop"/>
+        <property name="javax.persistence.jdbc.user" value="scott"/>
+        <property name="javax.persistence.jdbc.password" value="tiger"/>
+        <property name="hibernate.show_sql" value="false"/>
+        <property name="hibernate.format_sql" value="true"/>
+        </properties>
+        </persistence-unit>
+</persistence>

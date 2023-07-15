@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE LoginResponse SYSTEM "eshop.dtd">
+<LoginResponse xmlns="http://www.infotel.com/eshop" 
+			   username="francois@yahoo.fr">
+	<FirstName>François</FirstName>
+	<LastName>Pignon</LastName>
+</LoginResponse>

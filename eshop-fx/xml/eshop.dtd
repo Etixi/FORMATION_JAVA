@@ -1,0 +1,9 @@
+<!ELEMENT LoginRequest (Username, Password)>
+<!ELEMENT Username (#PCDATA)>
+<!ELEMENT Password (#PCDATA)>
+<!ATTLIST LoginRequest xmlns CDATA #IMPLIED>
+
+<!ELEMENT LoginResponse (FirstName, LastName)>
+<!ELEMENT FirstName (#PCDATA)>
+<!ELEMENT LastName (#PCDATA)>
+<!ATTLIST LoginResponse username CDATA #REQUIRED xmlns CDATA #IMPLIED>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+        targetNamespace="http://www.infotel.com/eshop" 
+        xmlns:tns="http://www.infotel.com/eshop" 
+        elementFormDefault="qualified">
+
+    <element name="LoginRequest">
+        <complexType>
+    		<sequence>
+    			<element name="Username" type="string"></element>
+    			<element name="Password" type="string"></element>
+    		</sequence>
+    	</complexType>
+    </element>
+
+    <element name="LoginResponse">
+    	<complexType>
+    		<sequence>
+    			<element name="FirstName" type="string"></element>
+    			<element name="LastName" type="string"></element>
+    		</sequence>
+    		<attribute name="username" type="string" use="required"></attribute>
+    	</complexType>
+    </element>
+
+    <element name="OrdersToProcessRequest">
+    	<complexType></complexType>
+    </element>
+
+    <element name="OrdersToProcessResponse">
+    	<complexType>
+    		<sequence>
+    			<element name="Order" type="tns:OrderType" maxOccurs="unbounded" minOccurs="0"></element>
+    		</sequence>
+    	</complexType>
+    </element>
+
+    <complexType name="CustomerType">
+    	<sequence>
+    		<element name="Name" type="string"></element>
+    		<element name="Address" type="tns:AddressType"></element>
+    	</sequence>
+    	<attribute name="username" type="string"></attribute>
+    </complexType>
+
+    <complexType name="AddressType">
+    	<sequence>
+    		<element name="Street" type="string"></element>
+    		<element name="Zip" type="string"></element>
+    		<element name="City" type="string"></element>
+    	</sequence>
+    </complexType>
+
+    <complexType name="BookType">
+    	<simpleContent>
+    		<extension base="string">
+    			<attribute name="id" type="int"></attribute>
+    		</extension>
+    	</simpleContent>
+    </complexType>
+
+    <complexType name="OrderType">
+    	<sequence>
+    		<element name="Customer" type="tns:CustomerType"></element>
+    		<element name="Items">
+    			<complexType>
+    				<sequence>
+    					<element name="Item" type="tns:OrderItemType"
+    						maxOccurs="unbounded" minOccurs="1">
+    					</element>
+    				</sequence>
+    			</complexType>
+    		</element>
+    	</sequence>
+    	<attribute name="id" type="int" use="required"></attribute>
+    	<attribute name="number" type="string" use="required"></attribute>
+    	<attribute name="created" type="dateTime" use="required"></attribute>
+    	<attribute name="status" type="tns:OrderStatus"
+    		use="required">
+    	</attribute>
+    </complexType>
+    
+    <simpleType name="OrderStatus">
+    	<restriction base="string">
+    		<enumeration value="Allocated"></enumeration>
+    		<enumeration value="Packed"></enumeration>
+    		<enumeration value="Shipping"></enumeration>
+    		<enumeration value="Delivered"></enumeration>
+    		<enumeration value="Cancelled"></enumeration>
+    	</restriction>
+    </simpleType>
+
+    <complexType name="OrderItemType">
+    	<sequence>
+    		<element name="Quantity" type="int"></element>
+    		<element name="Price" type="double"></element>
+    		<element name="Book" type="tns:BookType"></element>
+    	</sequence>
+    	<attribute name="id" type="int"></attribute>
+    </complexType>
+</schema>

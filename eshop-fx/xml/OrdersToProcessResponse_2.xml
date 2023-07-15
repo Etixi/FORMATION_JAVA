@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OrdersToProcessResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ 						 xsi:schemaLocation="http://www.infotel.com/eshop eshop.xsd"
+ 						 xmlns="http://www.infotel.com/eshop">
+	<Order id="1" number="CDE23-0010" created="2023-03-10T10:30:00" status="Allocated">
+		<Customer username="emile@mailo.fr">
+			<Name>Émile Lampion</Name>
+			<Address>
+				<Street>12 rue de Belleville</Street>
+				<Zip>75020</Zip>
+				<City>PARIS</City>
+			</Address>
+		</Customer>
+		<Items>
+			<Item id="1">
+				<Quantity>2</Quantity>
+				<Price>10.2</Price>
+				<Book id="10">Astérix le Gaulois</Book>
+			</Item>
+			<Item id="2">
+				<Quantity>1</Quantity>
+				<Price>10.8</Price>
+				<Book id="25">Tintin au Tibet</Book>
+			</Item>
+		</Items>
+	</Order>
+	<Order id="2" number="CDE23-0012" created="2023-03-22T15:45:00" status="Allocated">
+		<Customer username="amelie@free.fr">
+			<Name>Amélie Poulain</Name>
+			<Address>
+				<Street>8 rue de Montorgueil</Street>
+				<Zip>75018</Zip>
+				<City>PARIS</City>
+			</Address>
+		</Customer>
+		<Items>
+			<Item id="3">
+				<Quantity>1</Quantity>
+				<Price>11.2</Price>
+				<Book id="12">Adèle et la Bête</Book>
+			</Item>
+		</Items>
+	</Order>
+</OrdersToProcessResponse>
